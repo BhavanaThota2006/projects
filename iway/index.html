@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!--Navigation section-->
+    <nav class="nav-first">
+        <div class="nav-f-logo">
+            <img src="./images/iWay-logo.jpg" class="nav-f-img">
+            <h2>iWay</h2>
+        </div>
+        <svg class="icon" onclick="toggle()">
+            <use xlink:href="./images/sprite.svg#menu"></use>
+        </svg>
+        <ul class=" nav-f-ul" id="menu">
+            <li class="list"><a href="#start-sec">Start</a></li>
+            <li class="list"><a href="#price-sec">Pricing</a></li>
+            <li class="list"><a href="#Service-sec">Services</a></li>
+            <li class="list"><a href="#contact-sec">Contact</a></li>
+        </ul>    
+    </nav>
+    <!--**JS**-->
+    <script>
+        function toggle(){
+            var m=document.getElementById("menu");
+            m.classList.toggle("nav-f-bgt")
+        }
+        AOS.init();
+    </script>
+    <!--Hero section-->
+    <section class="hero">
+        <div class="hero-text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="50">
+            <h1>For Lightening Internet</h1>
+            <p>Unstoppable and Unlimited Internet...</p>
+            <button class="bgt bgt1">Get Started</button>
+        </div>
+        <img src="./images/banner.png" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="80">
+    </section>
+    <!--start section-->
+    <section class="start" data-aos="fade-down" data-aos-delay="300" id="start-sec">
+        <h2>Starting at &#8377 550/- per month</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quis ea!</p>
+        <div class="start-ip">
+            <input type="text" class="startip" placeholder="Your mobile number here" o>
+            <button class="bgt bgt1 startbgt">Get Started</button>
+        </div>
+        <ul class="list-style1 start-ul">
+            <li class="list-style-li bgt bgt4" style="background-color:skyblue;">Rs.550/-</li>
+            <li class="list-style-li">Rs.1500/-</li>
+            <li class="list-style-li">Rs.4500/-</li>
+        </ul>
+        <!--card section-->
+        <div class="cardsec">
+            <div class="card1" data-aos="fade-right" data-aos-delay="300">
+                <div class="head1">
+                    <p>Entry</p>
+                    <h2 style="display: inline-block;">&#8377 550/-&nbsp;</h2><em>/month</em><br>
+                    <button class="bgt bgt4 head1-bgt">10% OFF</button><br>
+                    <p><em>60GB with high speed</em></p>
+                </div>
+                <div class="body1">
+                    <ul class="list-style">
+                        <li >unlimited speed upto 60GB</li>
+                        <li >10Mbps after 60Gb</li>
+                        <li >Dynamic IP</li>
+                    </ul><br>
+                    <button class="bgt bgt3 body1-bgt">Buy Now</button>
+                </div>
+            </div>
+            <div class="card1 card2" data-aos="zoom-in" data-aos-delay="300">
+                <div class="head1 head2">
+                    <p>Unstoppable</p>
+                    <h2 style="display: inline-block;">&#8377 1500/-&nbsp;</h2><em>/month</em><br>
+                    <button class="bgt bgt4 head1-bgt">10% OFF</button><br>
+                    <p><em>unlimited speed upto 300GB</em></p>
+                </div>
+                <div class="body1 body2">
+                    <ul class="list-style">
+                        <li >Unlimited speed upto 300GB</li>
+                        <li >10Mbps after 300GB</li>
+                        <li >Dynamic IP</li>
+                    </ul><br>
+                    <button class="bgt bgt3 body2-bgt">Buy Now</button>
+                </div>
+                <img src="./images/popular.svg" alt="">
+            </div>
+            <div class="card1" data-aos="fade-left" data-aos-delay="500">
+                <div class="head1">
+                    <p>Unlimited</p>
+                    <h2 style="display: inline-block;">&#8377 4500/-&nbsp;</h2><em>/month</em><br>
+                    <button class="bgt bgt4 head1-bgt">10% OFF</button><br>
+                    <p><em>unlimited access</em></p>
+                </div>
+                <div class="body1">
+                    <ul class="list-style">
+                        <li >Unlimited acess</li>
+                        <li >Upto 40Mbps Bandwidth</li>
+                        <li >Static IP</li>
+                    </ul><br>
+                    <button class="bgt bgt3 body1-bgt">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Main section-->
+    <main class="mainsec" id="price-sec">
+        <h2 >Go with iWay to explore world..</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, odio!</p>
+            <div class="grid-main">
+                <div class="grid-sec">
+                        <!--sec1-->
+                        <div class="sec-text">
+                            <div class="icon-style-class">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#easy"></use>
+                                </svg>
+                            </div>
+                            <h3>Super Easy to Use</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quis natus facere in ad cum ipsum, vitae nemo doloremque illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, suscipit?</p>
+                            <a href="#" class="arrow">learn more</a>
+                        </div>
+                        <div class="sec-img" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="./images/easy.jpg">
+                        </div>
+                        <!--sec2-->
+                        <div class="sec-img" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="./images/fast.jpg">
+                        </div>
+                        <div class="sec-text">
+                            <div class="icon-style-class">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#computer"></use>
+                                </svg>
+                            </div>
+                            <h3>Simply lightening fast</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quis natus facere in ad cum ipsum, vitae nemo doloremque illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, suscipit?</p>
+                            <a href="#" class="arrow">learn more</a>
+                        </div>
+                        <!--sec3-->
+                        <div class="sec-text">
+                            <div class="icon-style-class">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#wordpress"></use>
+                                </svg>
+                            </div>
+                            <h3>We bet on your security</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quis natus facere in ad cum ipsum, vitae nemo doloremque illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, suscipit?</p>
+                            <a href="#" class="arrow">learn more</a>
+                        </div>
+                        <div class="sec-img" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="./images/wordpress.jpg">
+                        </div>
+                        <!--sec4-->
+                        <div class="sec-img" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="./images/support.jpg">
+                        </div>
+                        <div class="sec-text">
+                            <div class="icon-style-class">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#clock"></use>
+                                </svg>
+                            </div>
+                            <h3>24/7 Expert Support</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quis natus facere in ad cum ipsum, vitae nemo doloremque illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, suscipit?</p>
+                            <a href="#" class="arrow">learn more</a>
+                        </div>
+                </div>
+            </div>
+    </main>
+
+    <!--nav-->
+    <section class="navsec" id="Service-sec">
+        <h2>User-friendly Control Panel</h2>
+        <div class="nav-grid-sec">
+            <div>
+                <img src="./images/ipad.png" data-aos="zoom-in" data-aos-delay="50">
+            </div>
+
+            <div class="nav-text">
+                <!--1st-->
+                <div class="navicon">
+                    <svg class="icon ci">
+                        <use xlink:href="./images/sprite.svg#easy"></use>
+                    </svg>
+                </div>
+                <div class=" navtext1">
+                    <h3>Tracking Devices</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam iste, pariatur explicabo repellat ad excepturi id at esse soluta deserunt aliquam distinctio ullam voluptates?</p>
+                </div>
+                <!--2nd-->
+                <div class="navicon">
+                    <svg class="icon ci">
+                        <use xlink:href="./images/sprite.svg#growth"></use>
+                    </svg>
+                </div>
+                <div class=" navtext1">
+                    <h3>Tracking Devices</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam iste, pariatur explicabo repellat ad excepturi id at esse soluta deserunt aliquam distinctio ullam voluptates?</p>
+                </div>
+                <!--3rd-->
+                <div class="navicon">
+                    <svg class="icon ci">
+                        <use xlink:href="./images/sprite.svg#wordpress"></use>
+                    </svg>
+                </div>
+                <div class=" navtext1">
+                    <h3>Tracking Devices</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam iste, pariatur explicabo repellat ad excepturi id at esse soluta deserunt aliquam distinctio ullam voluptates?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--nav section 2-->
+    <section class="navsec1" id="contact-sec">
+        <h2>What Our Coustomers are Saying</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, suscipit!</p>
+        <div class="nav2-text">
+            <div class="nav2-img">
+                <img src="./images/portfolio.jpg">
+            </div>
+            <div class="nav2-text-style">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illum ipsam odit, eos magni earum adipisci! Alias animi voluptas ex excepturi iusto aliquid. Saepe, soluta in natus cum odio atque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, tempora.</p>
+                <div class="nameki">
+                    <div class="navicon">
+                        <svg class="icon ci">
+                            <use xlink:href="./images/sprite.svg#line"></use>
+                        </svg>
+                    </div>
+                    <div class="name">
+                        <h3>Jhon Smith</h3>
+                        <p>ABC Company</p>
+                    </div>
+                </div>
+                <div class="posicon">
+                    <div class="icon-style-class poski" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="50">
+                        <svg class="icon pi">
+                            <use xlink:href="./images/sprite.svg#quotes"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Top section-->
+    
+
+    <!--footer section-->
+    <footer class="footersec">
+        <div class="navf">
+            <div class="navfoot">
+                <h3>Ready to Get Started?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit doloremque placeat provident voluptatum voluptatibus corporis, ratione quibusdam odio, quia voluptate aliquid unde totam, vitae quidem natus molestias. Earum, eum.</p>
+            </div>
+            <div>
+                <button class="bgt bgt1 bgtl">Get Started</button>
+            </div>
+        </div>
+        <!--Footer grid-->
+        <div class="fsec">
+                <div class="fsec1">
+                    <ul>
+                        <li class="fsec-list"><a href="#"><h2>iWay</h2></a></li>
+                        <li class="fsec-list"><a href="#"><p>Copyright 2025 iWay</p></a></li>
+                    </ul>
+                </div>
+                <div class="fsec2">
+                    <ul>
+                        <li class="fsec-list"><a href="#"><h3>PRODUCTS</h3></a></li>
+                        <li class="fsec-list"><a href="#"><p>Internet Service </p></a></li>
+                        <li class="fsec-list"><a href="#"><p>Security tools</p></a></li>
+                        <li class="fsec-list"><a href="#"><p>Dedicated Hosting</p></a></li>
+                    </ul>
+                </div>
+                <div class="fsec2">
+                    <ul>
+                        <li class="fsec-list"><a href="#"><h3>COMPANY</h3></a></li>
+                        <li class="fsec-list"><a href="#"><p>About</p></a></li>
+                        <li class="fsec-list"><a href="#"><p>Affiliates</p></a></li>
+                        <li class="fsec-list"><a href="#"><p>Blog</p></a></li>
+                    </ul>
+                </div>
+                <div class="fsec2">
+                    <ul>
+                        <li><a href="#"><h3>SUPPORT</h3></a></li>
+                        <li><a href="#"><p>Contact</p></a>
+                        <li><a href="#"><p>Knowledge Base</p></a></li>
+                        <li><a href="#"><p>FAQ</p></a></li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

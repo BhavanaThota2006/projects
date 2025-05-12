@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="con">
+        <div class="cal">
+            <input type="text" placeholder="0" id="opscreen"  class="btn-grad">
+            <button onclick="Clear()" class="btn-grad">Cl</button>
+            <button onclick="del()" class="btn-grad">DEl</button>
+            <button onclick="display('%')" class="btn-grad">%</button>
+            <button onclick="display('/')" class="btn-grad">/</button>
+            <button onclick="display('7')" class="btn-grad">7</button>
+            <button onclick="display('8')" class="btn-grad">8</button>
+            <button onclick="display('9')" class="btn-grad">9</button>
+            <button onclick="display('*')" class="btn-grad">*</button>
+            <button onclick="display('4')" class="btn-grad">4</button>
+            <button onclick="display('5')" class="btn-grad">5</button>
+            <button onclick="display('6')" class="btn-grad">6</button>
+            <button onclick="display('-')" class="btn-grad">-</button>
+            <button onclick="display('1')" class="btn-grad">1</button>
+            <button onclick="display('2')" class="btn-grad">2</button>
+            <button onclick="display('3')" class="btn-grad">3</button>
+            <button onclick="display('+')" class="btn-grad">+</button>
+            <button onclick="display('.')" class="btn-grad">.</button>
+            <button onclick="display('0')" class="btn-grad">0</button>
+            <button onclick="cal()" class="equ btn-grad">=</button>
+        </div>
+    </div>
+
+    <script>
+        let opscreen=document.getElementById('opscreen');
+        function display(num){
+            opscreen.value += num;
+        }
+        function cal(){
+            try{
+                opscreen.value=eval(opscreen.value); /*evaluates a given string as code and executes it. It can run mathematical expressions, JavaScript statements, and even entire functions*/
+            }
+            catch(err){
+                alert("Invalid");
+            }
+        }
+        function Clear(){
+            opscreen.value="";
+        }
+        function del(){
+            opscreen.value=opscreen.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>
