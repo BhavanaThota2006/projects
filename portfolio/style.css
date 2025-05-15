@@ -567,6 +567,9 @@ body{
         padding-top: 0.5em;
         padding-left: 0;
     }
+    .contact{
+        padding-left: 1em;
+    }
 }
 
 .form{
