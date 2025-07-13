@@ -23,7 +23,7 @@ body{
 
 @media(min-width:120px) and (max-width:400px) {
     .con{
-        margin-left:3px;
+        margin-left:8px;
         width: 100% ;
     }
 }
