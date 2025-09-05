@@ -1,7 +1,0 @@
-2025-06-17 11:16:38 | att.py - time_tracker - Visual Studio Code | 4 seconds
-2025-06-17 11:16:39 | ChatGPT - Google Chrome | 1 seconds
-2025-06-17 11:16:40 | YouTube - Google Chrome | 1 seconds
-2025-06-17 11:16:41 | (4) Bhavana Thota | LinkedIn - Google Chrome | 1 seconds
-2025-06-17 11:16:49 | ChatGPT - Google Chrome | 8 seconds
-2025-06-17 11:16:56 | YouTube - Google Chrome | 7 seconds
-2025-06-17 11:17:00 | att.py - time_tracker - Visual Studio Code | 3 seconds
