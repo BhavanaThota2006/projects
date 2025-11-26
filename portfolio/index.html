@@ -18,8 +18,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
 </head>
 <body>
+
     <!--UP ARROW
     <a href="#" class="scroll-to-top" title="Go to top">&#8679;</a>-->
     <div class="scroll-to-top" title="Go to top">
@@ -44,6 +46,7 @@
                         <li class="btn-grad"><a href="#about-sec">About</a></li>
                         <li class="btn-grad"><a href="#skill-sec">Skills</a></li>
                         <li class="btn-grad"><a href="#proj-sec">Project</a></li>
+                        <li class="btn-grad"><a href="#work-sec">Work</a></li>
                         <li class="btn-grad"><a href="#contact-sec">Contact</a></li>
                     </ul>
                 </div>
@@ -53,7 +56,12 @@
                 <div class="ibtext" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <h2>Thota Bhavana</h2>
                     <h3>|| Aspiring Full-Stack Developer ||</h3>
-                    <p>I'm currently focused on mastering frontend and backend technologies, and building practical projects to strengthen my skills.</p>
+                    <p>I'm currently focused on mastering backend technologies, and building practical projects to strengthen my frontend skills.</p>
+                    <div class="btn-grad home-btn">
+                        <a href="./files/BHAVANA THOTA(1).pdf" download="Resume.pdf">Resume 
+                            <svg fill="#000000" width="40px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>download</title><path d="M16.001 19.314l-8.485-8.485 2.828-2.829 5.657 5.657 5.657-5.657 2.828 2.828-8.485 8.486zM8 28h16v-4h-16v4z"></path></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="ibimg" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">
                     <div class="ibibg"></div>
@@ -71,11 +79,15 @@
             <div class="abtext">
                 <div>
                     <h2>About Me..</h2>
-                    <p>Hello! I'm an aspiring <strong>Full Stack Web Developer</strong> with a passion for creating clean, responsive, and user-friendly web applications. I'm currently learning <strong>JavaScript</strong>, and I have a solid foundation in <strong>HTML</strong> and <strong>CSS</strong>.</p>
-                    <p>My journey into web development started out of curiosity, and it quickly grew into a deep interest in building websites and learning how the web works and I have an strong foundation in c and java.</p>
+                    <p>Hello! I'm an aspiring <strong>Full Stack Web Developer</strong> with a passion for creating clean, responsive, and user-friendly web applications. I'm currently learning <strong>Backend technologies</strong>, and I have a solid foundation in <strong>frontend technologies</strong>.</p>
+                    <p>My journey into web development started out of curiosity, and it quickly grew into a deep interest in building websites and learning how the web works and I have an strong foundation in c,java and basiv python.</p>
                 </div>
                 <div class="ab-btn">
-                    <button class="abtxt-btn">More About Me</button>
+                    <button class="abtxt-btn about-resume">
+                        <a href="./files/BHAVANA THOTA(1).pdf" download="Resume.pdf">Resume
+                            <svg fill="#000000" width="40px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>download</title><path d="M16.001 19.314l-8.485-8.485 2.828-2.829 5.657 5.657 5.657-5.657 2.828 2.828-8.485 8.486zM8 28h16v-4h-16v4z"></path></svg>
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -83,7 +95,7 @@
 
 
     <!--SKILLS SECTION-->
-    <section class="skill" id="skill-sec">
+   <!-- <section class="skill" id="skill-sec">
         <div class="skill-tech">
             <h2>Technical Skills</h2>
             <span class="html">
@@ -162,78 +174,775 @@
                 <div class="sk2-html sk1-team" data-aos="fade-right" data-aos-duration="2000"></div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!--SKILL SECTION-->
+    <div id="skill-sec" class="skill-section">
+        <section class="skill-sec">
+            <h2 style="margin: 1px 0px 1.5em 10em;">Skills</h2>
+            <h2 style="margin-bottom: 1em; margin-left: 1em; font-size: 2.3em; display: inline-block;">Technical Skills</h2>
+            <span class="ab-btn skill-sec-btn">
+                <button class="abtxt-btn skill-btn" style="display: inline-block; margin-left: 35em;" onclick="refresh()">Click Me..</button>
+            </span>
+            <div class="sk-box">
+                <div class="skill-grid">
+                    <!--HTML-->
+                    <div class="skill1">
+                        <div class="skill">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num" >
+                                        90%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill:#FF0000;"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
+                        <span>HTML</span>
+                    </div>
+                    <!--CSS-->
+                    <div class="skill1">
+                        <div class="skill skill-css">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        90%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg svg-css" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html sk-css">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill:#0000FF;"><path d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z"></path></svg>
+                        <span>CSS</span>
+                    </div>
+                    <!--Js-->
+                    <div class="skill1">
+                        <div class="skill">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        75%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-js" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill: #F0DB4F"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"></path></svg>
+                        <span>JavaScript</span>
+                    </div>
+                    <!--React-->
+                    <div class="skill1">
+                        <div class="skill skill-css">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg svg-css" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-react" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html sk-css">
+                        <svg width="40px" height="40px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_reactjs</title><circle cx="16" cy="15.974" r="2.5" style="fill:#00d8ff"/><path d="M16,21.706a28.385,28.385,0,0,1-8.88-1.2,11.3,11.3,0,0,1-3.657-1.958A3.543,3.543,0,0,1,2,15.974c0-1.653,1.816-3.273,4.858-4.333A28.755,28.755,0,0,1,16,10.293a28.674,28.674,0,0,1,9.022,1.324,11.376,11.376,0,0,1,3.538,1.866A3.391,3.391,0,0,1,30,15.974c0,1.718-2.03,3.459-5.3,4.541A28.8,28.8,0,0,1,16,21.706Zm0-10.217a27.948,27.948,0,0,0-8.749,1.282c-2.8.977-4.055,2.313-4.055,3.2,0,.928,1.349,2.387,4.311,3.4A27.21,27.21,0,0,0,16,20.51a27.6,27.6,0,0,0,8.325-1.13C27.4,18.361,28.8,16.9,28.8,15.974a2.327,2.327,0,0,0-1.01-1.573,10.194,10.194,0,0,0-3.161-1.654A27.462,27.462,0,0,0,16,11.489Z" style="fill:#00d8ff"/><path d="M10.32,28.443a2.639,2.639,0,0,1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.755,28.755,0,0,1,3.4-8.593h0A28.676,28.676,0,0,1,16.71,5.995a11.376,11.376,0,0,1,3.384-2.133,3.391,3.391,0,0,1,2.878,0c1.489.858,1.982,3.486,1.287,6.859a28.806,28.806,0,0,1-3.316,8.133,28.385,28.385,0,0,1-5.476,7.093,11.3,11.3,0,0,1-3.523,2.189A4.926,4.926,0,0,1,10.32,28.443Zm1.773-14.7a27.948,27.948,0,0,0-3.26,8.219c-.553,2.915-.022,4.668.75,5.114.8.463,2.742.024,5.1-2.036a27.209,27.209,0,0,0,5.227-6.79,27.6,27.6,0,0,0,3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.327,2.327,0,0,0-1.868.089A10.194,10.194,0,0,0,17.5,6.9a27.464,27.464,0,0,0-5.4,6.849Z" style="fill:#00d8ff"/><path d="M21.677,28.456c-1.355,0-3.076-.82-4.868-2.361a28.756,28.756,0,0,1-5.747-7.237h0a28.676,28.676,0,0,1-3.374-8.471,11.376,11.376,0,0,1-.158-4A3.391,3.391,0,0,1,8.964,3.9c1.487-.861,4.01.024,6.585,2.31a28.8,28.8,0,0,1,5.39,6.934,28.384,28.384,0,0,1,3.41,8.287,11.3,11.3,0,0,1,.137,4.146,3.543,3.543,0,0,1-1.494,2.555A2.59,2.59,0,0,1,21.677,28.456Zm-9.58-10.2a27.949,27.949,0,0,0,5.492,6.929c2.249,1.935,4.033,2.351,4.8,1.9.8-.465,1.39-2.363.782-5.434A27.212,27.212,0,0,0,19.9,13.74,27.6,27.6,0,0,0,14.755,7.1c-2.424-2.152-4.39-2.633-5.191-2.169a2.327,2.327,0,0,0-.855,1.662,10.194,10.194,0,0,0,.153,3.565,27.465,27.465,0,0,0,3.236,8.1Z" style="fill:#00d8ff"/></svg>
+                        <span>React</span>
+                    </div>
+                        <!--Bootstrap-->
+                    <div class="skill1">
+                        <div class="skill">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num" >
+                                        80%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-bootstrap" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(95, 76, 157)"><path d="M18.002 2.997H5.999A3.011 3.011 0 0 0 2.997 6v12.002a3.012 3.012 0 0 0 3.002 3.001h12.003a3.012 3.012 0 0 0 3.001-3.001V6a3.012 3.012 0 0 0-3.001-3.003zm-1.64 12.647c-.152.36-.389.68-.693.927a3.594 3.594 0 0 1-1.206.614c-.49.151-1.074.229-1.75.229H7.888V6.909h5.103c.943 0 1.7.213 2.267.646.569.436.854 1.082.854 1.958 0 .528-.13.983-.389 1.357-.259.373-.63.664-1.111.868v.034c.642.135 1.137.438 1.464.912.327.473.493 1.069.493 1.789 0 .405-.078.788-.225 1.147l.02.021v.003zm-2.084-2.589c-.309-.282-.739-.419-1.297-.419H9.737v3.276h3.253c.554 0 .991-.144 1.298-.435.308-.289.464-.701.464-1.229-.005-.518-.156-.919-.464-1.193h-.014.004zm-.451-2.119c.299-.251.444-.613.444-1.084 0-.526-.131-.902-.397-1.116-.264-.214-.646-.326-1.146-.326H9.727v2.898h3.001c.436.001.81-.127 1.099-.372z"></path></svg>
+                        <span>Bootstrap</span>
+                    </div>
+                    <!--Java-->
+                    <div class="skill1">
+                        <div class="skill skill-css">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg svg-css" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-java" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html sk-css">
+                        <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z" fill="#E76F00"/><path d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z" fill="#E76F00"/><path d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z" fill="#5382A1"/><path d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z" fill="#5382A1"/><path d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z" fill="#5382A1"/><path d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z" fill="#5382A1"/><path d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z" fill="#5382A1"/><path d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z" fill="#5382A1"/></svg>
+                        <span>Java</span>
+                    </div>
+                    <!--Git-->
+                    <div class="skill1">
+                        <div class="skill">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num" >
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-react" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(228, 123, 43)"><path d="m21.62 11.108-8.731-8.729a1.292 1.292 0 0 0-1.823 0L9.257 4.19l2.299 2.3a1.532 1.532 0 0 1 1.939 1.95l2.214 2.217a1.53 1.53 0 0 1 1.583 2.531c-.599.6-1.566.6-2.166 0a1.536 1.536 0 0 1-.337-1.662l-2.074-2.063V14.9c.146.071.286.169.407.29a1.537 1.537 0 0 1 0 2.166 1.536 1.536 0 0 1-2.174 0 1.528 1.528 0 0 1 0-2.164c.152-.15.322-.264.504-.339v-5.49a1.529 1.529 0 0 1-.83-2.008l-2.26-2.271-5.987 5.982c-.5.504-.5 1.32 0 1.824l8.731 8.729a1.286 1.286 0 0 0 1.821 0l8.69-8.689a1.284 1.284 0 0 0 .003-1.822"></path></svg>
+                        <span>Git</span>
+                    </div>
+                    <!--GitHub-->
+                    <div class="skill1">
+                        <div class="skill skill-css">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        85%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg svg-css" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html sk-css sk-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+            <h2 style="font-size: 2.3em; display: inline-block; margin: 2em 14em 1em 1em;">Professional Skills</h2>
+            <span class="ab-btn skill-sec-btn2">
+                <button class="abtxt-btn" style="display: inline-block;" onclick="refresh()">Click Me..</button>
+            </span>
+            <div class="sk-box">
+                <div class="skill-pro">
+                    <!--Communication-->
+                    <div class="skill1">
+                        <div class="skill">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num" >
+                                        80%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-bootstrap" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html">
+                        <svg width="40px" height="40px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M33 38H22V30H36V22H44V38H39L36 41L33 38Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6H36V30H17L13 34L9 30H4V6Z" fill="#2F88FF" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 18H20" stroke="white" stroke-width="4" stroke-linecap="round"/><path d="M26 18H27" stroke="white" stroke-width="4" stroke-linecap="round"/><path d="M12 18H13" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        </svg> &nbsp;<span>Communication</span>
+                    </div>
+                    <!--Creativity-->
+                    <div class="skill1">
+                        <div class="skill skill-css">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg svg-css" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-react" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html sk-css">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 97.562 97.562" style="enable-background:new 0 0 97.562 97.562;"xml:space="preserve"><g><path d="M79.545,27.006C78.258,8.37,63.527,0.012,48.801,0c-0.006,0-0.013,0-0.02,0s-0.014,0-0.02,0C34.034,0.012,19.304,8.37,18.017,27.005c-0.133,1.325-0.177,2.65-0.108,3.992c0.08,1.547,0.259,3.095,0.587,4.613c0.809,3.784,2.355,7.255,4.622,10.407c0.778,1.081,13.078,18.189,14.251,29.534C36.605,75.602,36,76.229,36,77.006v12.883c0,4.23,3.442,7.673,7.674,7.673h10.214c4.231,0,7.675-3.441,7.675-7.673V77.006c0-0.775-0.605-1.404-1.369-1.455c1.173-11.344,13.474-28.453,14.251-29.533c2.267-3.152,3.812-6.623,4.622-10.407c0.329-1.518,0.507-3.065,0.587-4.613C79.721,29.656,79.677,28.331,79.545,27.006z M70.944,31.111c-0.063,1.21-0.196,2.275-0.411,3.269c-0.563,2.624-1.65,5.071-3.231,7.271c-2.724,3.782-10.676,15.43-13.027,25.479H43.289c-2.353-10.05-10.304-21.697-13.027-25.477c-1.583-2.203-2.671-4.651-3.235-7.285c-0.213-0.986-0.347-2.052-0.408-3.255c-0.047-0.887-0.021-1.787,0.076-2.751l0.009-0.081l0.004-0.081C27.68,14.139,38.74,9.119,48.781,9.111h0.013C58.822,9.119,69.882,14.139,70.856,28.2l0.003,0.081l0.009,0.081C70.965,29.327,70.99,30.227,70.944,31.111z"/></g></svg>
+                        <span>Creativity</span>
+                    </div>
+                    <!--Problemsolving-->
+                    <div class="skill1">
+                        <div class="skill">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        75%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-js" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html">
+                        <svg version="1.2" baseProfile="tiny" id="Layer_1" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"x="0px" y="0px" viewBox="-63 65 128 128" xml:space="preserve"><path d="M-32.6,131.7l-2.1,2.2l4,3.7l2.1-2.2c0.9,0.5,1.9,0.9,2.8,1l0.1,3l5.4-0.2l-0.1-3c1-0.2,1.9-0.7,2.7-1.2l2.2,2.1l3.7-4l-2.2-2.1c0.5-0.9,0.9-1.9,1-2.8l3-0.1l-0.2-5.5l-3,0.1c-0.2-1-0.7-1.9-1.2-2.7l2.1-2.2l-4-3.7l-2.1,2.2c-0.9-0.5-1.9-0.9-2.8-1l-0.1-3l-5.4,0.2l0.1,3c-1,0.2-1.9,0.7-2.7,1.2l-2.2-2.1l-3.7,4l2.2,2.1c-0.5,0.9-0.9,1.9-1,2.8l-3,0.1l0.2,5.4l3-0.1C-33.6,130-33.2,130.9-32.6,131.7z M-23.7,118.6c4.1-0.1,7.4,3,7.5,7.1s-3,7.4-7.1,7.5s-7.4-3-7.5-7.1C-30.9,122.1-27.7,118.7-23.7,118.6z M-22.2,149.3l-0.1-3.7l-2.9,0.1c-0.1-0.2-0.1-0.4-0.2-0.5l2.1-2.1l-2.7-2.6l-2,2.1c-0.2-0.1-0.4-0.2-0.6-0.2l-0.1-2.9l-3.7,0.1l0.1,2.9c-0.1,0-0.2,0.1-0.4,0.2c-0.1,0-0.2,0.1-0.2,0.1l-2.1-2l-2.6,2.7l2.1,2c-0.1,0.2-0.2,0.4-0.2,0.6l-2.9,0.1l0.1,3.7l2.9-0.1c0.1,0.2,0.2,0.4,0.2,0.5l-2.1,2.2l2.7,2.6l2.1-2.2c0.2,0.1,0.3,0.1,0.5,0.2l0.1,3l3.7-0.1l-0.1-3c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.1,0,0.2-0.1l2.2,2.1l2.6-2.7l-2.2-2.1c0.1-0.2,0.2-0.3,0.2-0.5L-22.2,149.3zM-28.3,148.9c-0.6,1.1-2,1.6-3.1,1c-1.1-0.6-1.6-2-1-3.1c0.6-1.1,2-1.6,3.1-1C-28.2,146.4-27.8,147.8-28.3,148.9z M-37.4,140.8l-3.6-3.3c0.1-0.3,0.3-0.6,0.4-0.9l4.9-0.1l-0.2-6.1l-4.9,0.1c-0.1-0.3-0.2-0.6-0.4-0.9l3.3-3.6l-4.4-4.2l-3.3,3.6c-0.2-0.1-0.4-0.2-0.6-0.2c-0.1,0-0.2-0.1-0.4-0.2l-0.1-4.8l-6.1,0.2l0.1,4.8c-0.3,0.1-0.6,0.2-0.9,0.4l-3.5-3.3l-4.2,4.4l3.6,3.3c-0.1,0.3-0.3,0.6-0.4,0.9L-63,131l0.2,6.1l5-0.2c0.1,0.3,0.2,0.5,0.4,0.8l-3.4,3.7l4.4,4.2l3.4-3.7c0.2,0.1,0.3,0.1,0.4,0.2c0.1,0,0.2,0.1,0.3,0.1l0.2,5.1l6.1-0.2l-0.2-5c0.3-0.1,0.5-0.2,0.8-0.3l3.7,3.4L-37.4,140.8z M-47.7,139.3c-3,0.9-6.3-0.8-7.2-3.8c-0.9-3,0.8-6.3,3.8-7.2c3-0.9,6.3,0.8,7.2,3.8C-42.9,135.1-44.6,138.3-47.7,139.3z M25.8,96.7c8.6,0,15.6,7,15.6,15.6s-7,15.6-15.6,15.6s-15.6-7-15.6-15.6S17.2,96.7,25.8,96.7z M45.4,131.9H9.9c-5.1,0-10.2,0.7-13.9,5.7c-1.6,2.5-16.4,21.1-16.4,21.1h-20.8c-3.7,0-6.8,3.1-6.8,6.8s3.1,6.8,6.8,6.8h23.7c1.7,0,3.5-0.7,4.7-2l13.9-16.9c0.4-0.4,0.7-0.6,1.4-0.6c1.1,0,2,0.7,2,2v30.6h43v-30.1c0-1.1,0.7-2,2-2c1.1,0,2,0.7,2,2v30.2H65v-34.1C65,140.7,56.2,131.9,45.4,131.9z"/></svg>
+                        <span>Problem Solving</span>
+                    </div>
+                    <!--Teamwork-->
+                    <div class="skill1">
+                        <div class="skill skill-css">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="num">
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="progress-svg svg-css" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#f9e1ad"/>
+                                    <stop offset="100%" stop-color="#aef5f9"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Animated progress circle -->
+                            <circle class="progress svg-react" cx="80" cy="80" r="70" />
+                        </svg>
+                    </div>
+                    <div class="sk-html sk-css">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg version="1.1" id="Layer_1" width="35px" height="35px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve"><g><g><path style="fill:#333333;" d="M189.491,205.519l-5.162,8.01c15.776,10.171,25.195,27.405,25.195,46.095v26.09h-59.171l34.714-59.505l-8.233-4.8l-29.214,50.095l-29.219-50.094l-8.233,4.8l34.719,59.505H85.715v-26.09c0-18.695,9.419-35.929,25.195-46.1l-5.162-8.01c-18.51,11.943-29.557,32.167-29.557,54.11v35.614h142.857v-35.614C219.049,237.681,208.001,217.457,189.491,205.519z"/><path style="fill:#333333;" d="M94.796,162.095c0,28.99,23.581,52.571,52.571,52.571s52.571-23.581,52.571-52.571c0-28.986-23.581-52.571-52.571-52.571S94.796,133.11,94.796,162.095z M190.415,162.095c0,23.733-19.314,43.048-43.048,43.048s-43.048-19.314-43.048-43.048c0-23.738,19.314-43.048,43.048-43.048S190.415,138.357,190.415,162.095z"/><path style="fill:#333333;" d="M83.039,179.638c-3.938,1.124-7.929,1.695-11.857,1.695c-23.733,0-43.048-19.314-43.048-43.048c0-23.738,19.314-43.048,43.048-43.048c12.957,0,25.1,5.762,33.324,15.814l7.376-6.033c-10.043-12.267-24.876-19.305-40.705-19.305c-28.99,0-52.571,23.586-52.571,52.571c0,28.99,23.581,52.571,52.571,52.571c4.814,0,9.681-0.695,14.471-2.062L83.039,179.638z"/><path style="fill:#333333;" d="M9.525,235.814c0-18.695,9.419-35.929,25.195-46.1l-5.162-8.01c-18.509,11.944-29.557,32.167-29.557,54.11v35.614h61.905v-9.524H9.525V235.814z"/><path style="fill:#333333;" d="M276.13,138.286c0-28.986-23.581-52.571-52.571-52.571c-15.824,0-30.657,7.038-40.7,19.305l7.376,6.033c8.224-10.052,20.371-15.814,33.324-15.814c23.733,0,43.048,19.31,43.048,43.048c0,23.733-19.314,43.048-43.048,43.048c-3.929,0-7.919-0.571-11.857-1.695l-2.624,9.152c4.79,1.371,9.662,2.071,14.481,2.071C252.549,190.857,276.13,167.276,276.13,138.286z"/><path style="fill:#333333;" d="M265.682,181.71l-5.162,8.01c15.776,10.171,25.195,27.405,25.195,46.095v26.09h-47.619l0,0h-9.524v9.524h66.667v-35.614C295.239,213.871,284.19,193.648,265.682,181.71z"/></g></g></svg>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
     <!--PROJECTS SECTION-->
     <section class="proj-sec" id="proj-sec">
-        <h2>Latest Project</h2>
+        <h2 style="margin-bottom: 2em;">Latest Project</h2>
         <div class="proj">
-            
-            <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
-                <img src="./images/img3.jpg">
-                <div class="proj1-txt">
-                    <p>
-                        The calculator is built using HTML, CSS, and JavaScript.
-                        HTML creates the layout with buttons and a display input.
-                        CSS styles the interface to make it user-friendly and responsive.
-                        JavaScript handles button clicks, updates the display, and evaluates expressions.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="proj1"data-aos="zoom-in" data-aos-duration="2000">
-                <img src="./images/img4.jpg">
-                <div class="proj1-txt">
-                    <p>
-                        iWay is a responsive website designed to provide users with detailed recharge information.
-                        It offers a user-friendly interface that works seamlessly across all devices.
-                        Users can easily access, view, and manage their recharge details anytime, anywhere.
-                        The platform ensures quick and secure access to essential information.
-                    </p>
+            <!--Weather app-->
+            <div class="pro-box">
+                <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                    <img src="./images/img10.jpg">
+                    <div class="proj1-txt">
+                        <p>
+                            <h1>Weather App</h1>
+                            Implemented API-based dynamic weather data rendering with robust error handling and created a mobilefriendly UI using clean, reusable components for an enhanced user experience.
+                        </p>
+                        <div class="proj-sec-btn">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://bhavanathota2006.github.io/WeatherApp-React/" target="_blank">
+                                            Live Demo
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://github.com/BhavanaThota2006/WeatherApp-React" target="_blank">
+                                            GitHub Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
-                <img src="./images/img5.jpg">
+            <!--Doraemon-->
+            <div class="proj1" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="./images/img11.jpg">
                 <div class="proj1-txt">
                     <p>
+                        <h1>Doraemon</h1>
+                        Built an interactive Doraemon character using pure HTML, CSS, and JavaScript, demonstrating strong skills in CSS animations, custom shapes, DOM manipulation, and event-driven UI interactions.
+                    </p>
+                    <div class="proj-sec-btn">
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href=" https://bhavanathota2006.github.io/Doraemon/" target="_blank">
+                                        Live Demo
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://github.com/BhavanaThota2006/Doraemon" target="_blank">
+                                        GitHub Link
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Calculator-->
+            <div class="pro-box">
+                <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                    <img src="./images/img12.jpg">
+                    <div class="proj1-txt">
+                        <p>
+                            <h1>Calculator</h1>
+                            Built a responsive, JavaScript-powered calculator with dynamic input handling, keyboard support, and clean UI using HTML, CSS, and JS.
+                        </p>
+                        <div class="proj-sec-btn">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://bhavanathota2006.github.io/projects/calculator/" target="_blank">
+                                            Live Demo
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://github.com/BhavanaThota2006/projects/tree/master/calculator" target="_blank">
+                                            GitHub Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tic_Tac_Toe-->
+            <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                <img src="./images/img13.jpg">
+                <div class="proj1-txt">
+                    <p>
+                        <h1>Tic-Tac-Toe</h1>
+                        Developed an interactive Tic Tac Toe game using HTML, CSS, and JavaScript with turn-based logic, win detection, and a responsive user interface.
+                    </p>
+                    <div class="proj-sec-btn">
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://bhavanathota2006.github.io/projects/Tic_Tac_Toe/" target="_blank">
+                                        Live Demo
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://github.com/BhavanaThota2006/projects/tree/master/Tic_Tac_Toe" target="_blank">
+                                        GitHub Link
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--iway-->
+            <div class="pro-box">
+                <div class="proj1" data-aos="zoom-in" data-aos-duration="2000">
+                    <img src="./images/img14.jpg">
+                    <div class="proj1-txt">
+                        <p>
+                            <h1>iWay</h1>
+                            iWay is a responsive website designed to provide users with detailed recharge information.
+                            It offers a user-friendly interface that works seamlessly across all devices.
+                        </p>
+                        <div class="proj-sec-btn">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://bhavanathota2006.github.io/projects/iway" target="_blank">
+                                            Live Demo
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://github.com/BhavanaThota2006/projects/tree/master/iway" target="_blank">
+                                            GitHub Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--MusicHub-->
+            <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                <img src="./images/img15.jpg">
+                <div class="proj1-txt">
+                    <p>
+                        <h1>MusicHub</h1>
                         MusicHub is a responsive website developed using Cursor AI.
-                        It offers detailed information about popular music genres, premium plans, and artists.
-                        The website ensures seamless navigation and is optimized for all devices.
+                        The website ensures seamless navigation for all devices.
                         Designed to deliver an engaging and user-friendly experience.
                     </p>
+                    <div class="proj-sec-btn">
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://bhavanathota2006.github.io/cursor_demo/" target="_blank">
+                                        Live Demo
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://github.com/BhavanaThota2006/cursor_demo" target="_blank">
+                                        GitHub Link
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--Sentinel Net-->
+            <div class="pro-box">
+                <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                    <img src="./images/img20.jpg">
+                    <div class="proj1-txt" style="margin: 0px !important;">
+                        <h1 style="margin: 0px !important;"> Sentinel Net</h1>
+                        <p style="margin: 0px !important; padding: 0px;">
+                            Developed Sentinel Net, an ML-based IDS using the NSL-KDD dataset with full preprocessing, hybrid resampling,and feature encoding, achieving strong detection performance where Random Forest model.
+                        </p>
+                        <div class="proj-sec-btn" style="margin: 0px !important;">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://github.com/SpringBoardMentor193s/SentinelNet/tree/bhavana" target="_blank">
+                                            GitHub Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!--Eng-Hin Traslator-->
+            <div class="proj1" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="./images/img16.jpg">
+                <div class="proj1-txt">
+                    <h1>Eng-Hin Translator</h1>
+                    <p style="margin-bottom: 0px !important;">
+                        Developed an Eng-Hin Translator using a React+Vite frontend and a FastAPI backend powered by the Helsinki-NLP/opus-mt-en-hi transformer model.
+                    </p>
+                    <div class="proj-sec-btn" style="margin-top: 0px !important;">
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://github.com/BhavanaThota2006/Eng-Hin-Translator" target="_blank">
+                                        GitHub Link
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Multi language Traslator-->
+            <div class="pro-box">
+                <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                    <img src="./images/img17.jpg">
+                    <div class="proj1-txt" style="margin: 0px !important;">
+                        <h1 style="margin: 0px !important;">Multi-lang Translator</h1>
+                        <p style="margin: 0px !important; padding: 0px;">
+                            Developed a Multilanguage Translator using a React frontend and a FastAPI backend powered by Facebook’s M2M100-1.2B model for high-accuracy neural machine translation.
+                        </p>
+                        <div class="proj-sec-btn" style="margin: 0px !important;">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://github.com/BhavanaThota2006/Multi_Lang" target="_blank">
+                                            GitHub Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Voice Traslator-->
+            <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                <img src="./images/img18.jpg">
+                <div class="proj1-txt" style="margin: 0px !important;">
+                    <h1 style="margin: 0px !important;">Audio Lang Converter</h1>
+                    <p style="margin: 0px !important; padding: 0px;">
+                        Developed a real-time speech translation system in Python that converts English audio input into a chosen target language using speech recognition, translation APIs, and text-to-speech.
+                    </p>
+                    <div class="proj-sec-btn" style="margin: 0px !important;">
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://github.com/BhavanaThota2006/Simple_VoiceTranslator" target="_blank">
+                                        GitHub Link
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--Automatic Time Tracker-->
+            <div class="pro-box">
+                <div class="proj1" data-aos="zoom-in" data-aos-duration="2000">
+                    <img src="./images/img19.jpg">
+                    <div class="proj1-txt" style="margin: 0px !important;">
+                        <h1 style="margin: 0px !important;">Automatic Time Tracker</h1>
+                        <p style="margin: 0px !important; padding: 0px;">
+                            Built an automatic desktop activity tracker in Python that logs active window usage in real time and visualizes productivity with dynamic pie-chart analytics.
+                        </p>
+                        <div class="proj-sec-btn" style="margin: 0px !important;">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://github.com/BhavanaThota2006/TimeTracker" target="_blank">
+                                            GitHub Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--AI CLI(Command Line Interface) Assistant-->
+            <div class="proj1" data-aos="zoom-out" data-aos-duration="2000">
+                <img src="./images/img21.jpg">
+                <div class="proj1-txt" style="margin: 0px !important;">
+                    <h1 style="margin: 0px !important;">AI CLI Assistant</h1>
+                    <p style="margin: 0px !important; padding: 0px;">
+                        Developed an AI-powered CLI assistant using Python and Tkinter that interprets natural language queries, maps them to system commands, and executes them with real-time output.
+                    </p>
+                    <div class="proj-sec-btn" style="margin: 0px !important;">
+                        <div>
+                            <span class="ab-btn">
+                                <button class="abtxt-btn btn-project">
+                                    <a href="https://github.com/BhavanaThota2006/CLI_ChatBot" target="_blank">
+                                        GitHub Link
+                                    </a>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!--Internship & Experience-->
+    <section id="work-sec">
+        <div class="work-grid">
+
+            <div class="work1-grid">
+                <h2>Internship</h2>
+                <div class="work1">
+                    <img src="./images/img22.jpg">
+                    <div class="work1-text">
+                        <h3>Artificial Intelligence Intern - Infosys SpringBoard</h3>
+                        <h5>Duration: 13-08-2025 to 08-10-2025</h5>
+                        <h5>Project: SentinelNet (Intrusion detection system)</h5>
+                        <h5>Languages: Python, Streamlit</h5>
+                        <div class="proj-sec-btn" style="margin: 0px !important;">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://github.com/SpringBoardMentor193s/SentinelNet/tree/bhavana" target="_blank">
+                                            GitHub Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work1-grid">
+                <h2>Experience</h2>
+                <div class="work1" style="padding-bottom: 2em;">
+                    <img src="./images/img23.jpg" height="180px">
+                    <div class="work1-text">
+                        <h3>Frontend Developer - Omdena (Collaborator)</h3>
+                        <h5>Duration: 03-09-2025 to 27-10-2025</h5>
+                        <h5>Project: CropLogic</h5>
+                        <h5>Languages: HTML, CSS, React</h5>
+                        <div class="proj-sec-btn" style="margin: 0px !important;">
+                            <div>
+                                <span class="ab-btn">
+                                    <button class="abtxt-btn btn-project">
+                                        <a href="https://drive.google.com/file/d/1fUIyNsWhD2iKkYnDoS_ZYw1nPCEKuP6C/view?usp=drive_link" target="_blank">
+                                            Certificate Link
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--CONTACT SECTION-->
     <section class="contact" id="contact-sec">
         <h2>Contact Me</h2>
-        <div class="con">
-            <div class="con-left">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 448 512" style="fill: #0077B5;"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                <a href="https://www.linkedin.com/in/bhavanathota2006/" target="_blank">https://www.linkedin.com/in/bhavanathota2006/</a>
+        <div class="cont-grid">
+
+            <div class="con">
+                <p>I'm currently open to new opportunities and collaborations.Feel free to reach out—I’d love to connect and discuss new opportunities.<br>You can contact me through email by submitting this form. 👉🏻</p>
+                <div class="con-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 448 512" style="fill: #0077B5;"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    <a href="https://www.linkedin.com/in/bhavanathota2006/" target="_blank">https://www.linkedin.com/in/bhavanathota2006/</a>
+                </div>
+                <div class="con-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="30px" height="30px"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    <a href="https://github.com/BhavanaThota2006/projects" target="_blank">https://github.com/BhavanaThota2006/projects</a>
+                </div>
             </div>
-            <div class="con-right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="30px" height="30px"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                <a href="https://github.com/BhavanaThota2006/projects" target="_blank">https://github.com/BhavanaThota2006/projects</a>
+            
+            <!--Form-->
+            <div class="demo">
+                <div class="form">
+                    <form action="https://formsubmit.co/ad740c4f3bc9748f110ee663fc73b42f" method="POST">
+                        <input type="text" name="name" required placeholder="Name" autocomplete="off"><br><br>
+                        <input type="email" name="email" required placeholder="Email" autocomplete="off"><br><br>
+                        <input type="text" name="subject" required placeholder="Subject" autocomplete="off"><br><br>
+                        <textarea name="message" required placeholder="Message" autocomplete="off"></textarea><br><br>
+                        <button class="abtxt-btn form-btn" type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="cont-txt">
-            <p>You can contact me through email by submitting this form.</p>
-        </div>
-        <!--Form-->
-        <div class="demo">
-            <div class="form">
-                <form action="https://formsubmit.co/ad740c4f3bc9748f110ee663fc73b42f" method="POST">
-                    <input type="text" name="name" required placeholder="Name" autocomplete="off"><br><br>
-                    <input type="email" name="email" required placeholder="Email" autocomplete="off"><br><br>
-                    <input type="text" name="subject" required placeholder="Subject" autocomplete="off"><br><br>
-                    <textarea name="message" required placeholder="Message" autocomplete="off"></textarea><br><br>
-                    <button class="abtxt-btn form-btn" type="submit">Submit</button>
-                </form>
-            </div>
+            
         </div>
     </section>
     

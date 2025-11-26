@@ -15,18 +15,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 }); 
-  // Show the button when user scrolls down
-  window.addEventListener('scroll', function() {
-    const scrollButton = document.querySelector('.scroll-to-top');
-    if (window.scrollY > 300) {
-      scrollButton.style.display = 'block';
-    } else {
-      scrollButton.style.display = 'none';
-    }
-  });
+// Show the button when user scrolls down
+window.addEventListener('scroll', function() {
+  const scrollButton = document.querySelector('.scroll-to-top');
+  if (window.scrollY > 300) {
+    scrollButton.style.display = 'block';
+  } else {
+    scrollButton.style.display = 'none';
+  }
+});
 
-  // Smooth scroll to top when clicked
-  document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+// Smooth scroll to top when clicked
+document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// To refresh the page when click me btn in skill 
+function refresh(){
+  location.reload();
+}
+
+
